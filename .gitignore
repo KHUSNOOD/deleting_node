@@ -73,3 +73,12 @@ void reverse(struct node *p,int n){
         p=p->next;
         }
 }
+********** reversing using recursion************
+void reverse(struct node*q,struct node *p){
+  if(p!=0){
+reverse(p,p->next);
+p->next=q;
+}
+else{
+first=q;}
+}
