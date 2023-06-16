@@ -54,3 +54,22 @@ struct node *q=p->next;
        }
    }
 }
+**************reversing the linked list using an array****************
+
+void reverse(struct node *p,int n){
+    int arr[n];
+    p=new node;
+    p=first;
+    int i=0;
+    while(p!=0){
+        arr[i]=p->data;
+        p=p->next;
+        i++;}
+        p=first;
+        i--;
+        while(p!=0){
+            p->data=arr[i];
+        i--;
+        p=p->next;
+        }
+}
