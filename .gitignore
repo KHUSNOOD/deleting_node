@@ -1,3 +1,5 @@
+
+***************** delete a node in linked list***********
 void dele(int key){
      struct node *p, *q;
      p=new node;
@@ -13,3 +15,24 @@ void dele(int key){
      delete p;
     
  }
+
+************checking if the list is_sorted*************
+
+void is_sorted(int key,int n){
+    struct node *p;
+    p=new node;
+    p=first;
+   for(int i=0; i<n; i++){
+       if(p->data>key){
+           key=p->data;
+           p=p->next;
+           
+       }
+       else{
+           cout<<"L_List is not sorted:"<<endl;
+          
+           break;
+           
+       }
+   }
+}
